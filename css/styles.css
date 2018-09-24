@@ -1,0 +1,82 @@
+  #result{
+    display: none;
+    color:blue;
+    margin-top: 17%;
+    text-align:center;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+  }
+  #hresult{
+    color: red;
+  }
+  h1{
+    color: blue;
+  }
+  .label{
+    color: grey;
+  }
+  #page1{
+    display: none;
+  }
+  #clearfix{
+    height: 8%;
+  }
+  body{
+    border-bottom-right-radius: 50%;
+    font-size: large;
+    background-color: maroon;
+  }
+  #cliff{
+    margin-top: 17%;
+    color: blue;
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  li{
+    list-style-type: none;
+    color: grey;
+  }
+
+  fieldset {
+    font-family: sans-serif;
+    border: 5px solid #1F497D;
+    background: #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 300px;
+}
+fieldset input{
+  width:50%
+}
+
+fieldset legend {
+    background: #1F497D;
+    color: #fff;
+    padding: 5px 10px ;
+    font-size: 32px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 5px #ddd;
+    margin-left: 20px;
+
+}
+
+.cartoon{
+  font-size: x-large;
+  color: red;
+}
+
+    html{
+      background-color: black;
+    }
+
+    .nyendwe{
+      font-size: x-large;
+      color: blue;;
+    }
+
+ul{
+  text-align: center;
+}
