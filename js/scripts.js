@@ -54,7 +54,7 @@ $(document).ready(function(){
     else {
       scores.push(0)
     }
-    // Front end for posting answers
+
     average=scores.reduce((a,b)=>a+b,0)*12.5
       $("#scores").text("scores:"+average+"%")
         $(".form").show()
@@ -65,7 +65,6 @@ $(document).ready(function(){
           window.location.reload();
           $("#form").show()
 
-      // $("#form").show()
     })
 
   })
