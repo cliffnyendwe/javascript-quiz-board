@@ -1,5 +1,3 @@
-
-//this is a front-end part
 var answers=[]
 var quizs=[1,2,3,4,5]
 var scores=[]
@@ -10,7 +8,7 @@ $(document).ready(function(){
     for(i=0;i<quizs.length;i++){
       var choice=parseInt($("form input[name='"+ i + "']:checked").val());
       if(isNaN(choice)){
-        alert("Can you be serious and fill all the questions")
+        window.alert("Can you be serious and fill all the questions")
         break;
       }
       else {
@@ -19,7 +17,7 @@ $(document).ready(function(){
     }
     // this is the business logic
     if(answers[0]===1){
-      scores.push(4)
+      scres.push(4)
 
        if(answers[1]===1){
         scores.push(4)
@@ -54,41 +52,26 @@ $(document).ready(function(){
     else {
       scores.push(0)
     }
-
+    // Front end for posting answers
     average=scores.reduce((a,b)=>a+b,0)*12.5
       $("#scores").text("scores:"+average+"%")
-        $(".form").show()
-        $("#ins").hide()
+        $("#form").hide()
         $("#result").show()
       $("#prev").click(function(){
           $("#result").hide()
           window.location.reload();
           $("#form").show()
 
+      // $("#form").show()
     })
 
   })
-  $("#begin").click(function(){
-    $("#page").hide()
-    $("#page1").show();
-  });
 
   $("#next").click(function(){
     $("#page").hide()
     $("#page1").show();
   });
 
-  $("#buttonAns").click(function(){
-    $("#page").hide()
-    $("#page1").hide();
-    $("#result").show();
-  });
 
-  $("#prev").click(function(){
-    $("#page").hide()
-    $("#page1").hide();
-    $("#result").hide();
-    $("#five").show();
-  });
 
 })

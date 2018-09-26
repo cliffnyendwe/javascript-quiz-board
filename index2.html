@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="container">
-        <h1 id="cliff">JAVASCRIPT QUIZ BOX</h1>
+        <h1 id="cliff">JAVASCRIPT QUIZ BOARD</h1>
           <ul id="ins">
           <p class="nyendwe">INSTRUCTIONS</p>
             <li><strong>Go through the questions and fill all before submiting.</strong></li>
@@ -23,7 +23,23 @@
                 <label for="quiz1" class="label"><b>1. Which link do we start with when linking bootstrap to the HTML page?(4mks):</b></label><br>
                   <input type="radio" name="0" value="1">bootstrap link<br>
                   <input type="radio" name="0" value="2">css link<br>
-                  <input type="radio" name="0" value="3">I don't know
+                  <input type="rad// user interface logic
+  $(document).ready(function() {
+    $("form#new-contact").submit(function(event) {
+      event.preventDefault();
+
+      var inputtedFirstName = $("input#new-first-name").val();
+      var inputtedLastName = $("input#new-last-name").val();
+
+      var newContact = new Contact(inputtedFirstName, inputtedLastName);
+
+      $("ul#contacts").append("<li><span class='contact'>" + newContact.firstName + "</span></li>");
+
+      $("input#new-first-name").val("");
+      $("input#new-last-name").val("");
+    });
+  });
+  io" name="0" value="3">I don't know
               </div>
 
               <div class="form-group">
